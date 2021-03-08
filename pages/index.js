@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -20,6 +21,17 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
+          <Link href="/global-state-example">
+            <a className={styles.card}>
+              <h3>React Global State &rarr;</h3>
+              <p>
+                Example of &zwnj;
+                <a href="https://www.npmjs.com/package/@dr.pogodin/react-global-state" target="_blank">react-global-state</a>
+                library in action.
+              </p>
+            </a>
+          </Link>
+
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
